@@ -1,0 +1,6 @@
+C:\Users\3binfo\source\repos\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\3binfo\source\repos\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\3binfo\source\repos\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.AssemblyInfoInputs.cache
+C:\Users\3binfo\source\repos\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.AssemblyInfo.cs
+C:\Users\3binfo\source\repos\Tcc.DayHappy\Tcc.DayHappy\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.deps.json
+C:\Users\3binfo\source\repos\Tcc.DayHappy\Tcc.DayHappy\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.dll
