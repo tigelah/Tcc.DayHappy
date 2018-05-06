@@ -6,6 +6,6 @@ namespace Tcc.DayHappy.Dominio
 {
     public class Entity
     {
-        public int ID { get; private set; }
+        public int Id { get; private set; }
     }
 }

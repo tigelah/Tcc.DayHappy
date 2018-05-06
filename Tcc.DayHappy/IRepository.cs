@@ -6,7 +6,7 @@ namespace Tcc.DayHappy.Dominio
 {
     public interface IRepository<TEntity>
     {
-        TEntity GetByID(int id);
+        TEntity GetById(int id);
         IEnumerable<TEntity> All();
         void Save(TEntity entity);
 
