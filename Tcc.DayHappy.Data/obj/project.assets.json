@@ -3783,11 +3783,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Rodrigo\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj",
+      "projectUniqueName": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj",
       "projectName": "Tcc.DayHappy.Data",
-      "projectPath": "G:\\Rodrigo\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj",
+      "projectPath": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj",
       "packagesPath": "C:\\Users\\Fernando\\.nuget\\packages\\",
-      "outputPath": "G:\\Rodrigo\\Tcc.DayHappy\\Tcc.DayHappy.Data\\obj\\",
+      "outputPath": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3806,8 +3806,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "G:\\Rodrigo\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj": {
-              "projectPath": "G:\\Rodrigo\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj"
+            "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj": {
+              "projectPath": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj"
             }
           }
         }
