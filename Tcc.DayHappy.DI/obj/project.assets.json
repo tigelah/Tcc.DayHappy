@@ -6744,26 +6744,23 @@
   },
   "packageFolders": {
     "C:\\Users\\Fernando\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.DI\\Tcc.DayHappy.DI.csproj",
+      "projectUniqueName": "G:\\Rodrigo\\Tcc.DayHappy\\Tcc.DayHappy.DI\\Tcc.DayHappy.DI.csproj",
       "projectName": "Tcc.DayHappy.DI",
-      "projectPath": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.DI\\Tcc.DayHappy.DI.csproj",
+      "projectPath": "G:\\Rodrigo\\Tcc.DayHappy\\Tcc.DayHappy.DI\\Tcc.DayHappy.DI.csproj",
       "packagesPath": "C:\\Users\\Fernando\\.nuget\\packages\\",
-      "outputPath": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.DI\\obj\\",
+      "outputPath": "G:\\Rodrigo\\Tcc.DayHappy\\Tcc.DayHappy.DI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -6775,8 +6772,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj": {
-              "projectPath": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj"
+            "G:\\Rodrigo\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj": {
+              "projectPath": "G:\\Rodrigo\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj"
             }
           }
         }

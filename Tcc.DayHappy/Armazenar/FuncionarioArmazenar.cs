@@ -16,7 +16,7 @@ namespace Tcc.DayHappy.Dominio.Storer
 
         public void Armazenar(int id, string nomeCargo, decimal salario, DateTime dataAdm, Pessoa pessoa, Contato contato, string referencia)
         {
-            var funcionario = _funcionarioRepository.GetByID(id);
+            var funcionario = _funcionarioRepository.GetById(id);
 
             if(funcionario == null)
             {

@@ -17,7 +17,7 @@ namespace Tcc.DayHappy.Dominio.Armazenar
             , string contato1, string contato2, string email, DateTime dataEvento, DateTime horarioInicio, DateTime horarioTermino, string tipoEvento
             , Decimal valorFrete, Decimal valorTotalServ, Decimal valorTotalProd, DateTime dataValidadeOrc, string statusOrc)
         {
-            var orcamento = _orcamentoRepository.GetByID(id);
+            var orcamento = _orcamentoRepository.GetById(id);
 
             if(orcamento == null)
             {

@@ -17,7 +17,7 @@ namespace Tcc.DayHappy.Dominio.Armazenar
 
         public void Armazenar(int id ,string modeloCarro, string numCarro, DateTime horarioSaida, Orcamento orcamento)
         {
-            var itinerario = _itinerarioRepository.GetByID(id);
+            var itinerario = _itinerarioRepository.GetById(id);
 
             if(itinerario == null)
             {

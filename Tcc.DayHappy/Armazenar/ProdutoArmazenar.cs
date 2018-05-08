@@ -17,7 +17,7 @@ namespace Tcc.DayHappy.Dominio.Armazenar
         public void Armazenar(int id , string nomeProduto, string faixaEtaria, string descricao, DateTime dataCompra,
             decimal valorLocacao, decimal valorCusto, string checkListPecas)
         {
-            var produto = _produtoRepository.GetByID(id);
+            var produto = _produtoRepository.GetById(id);
 
             if(produto == null)
             {

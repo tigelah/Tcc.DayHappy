@@ -16,7 +16,7 @@ namespace Tcc.DayHappy.Dominio.Storer
 
         public void Armazenar(int id, Pessoa pessoa, Contato contato, string referencia)
         {
-            var pessoaFisica = _pessoaFisicaRepository.GetByID(id);
+            var pessoaFisica = _pessoaFisicaRepository.GetById(id);
 
             if(pessoaFisica == null)
             {
