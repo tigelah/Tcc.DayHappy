@@ -9,6 +9,7 @@ namespace Tcc.DayHappy.Dominio
         TEntity GetById(int id);
         IEnumerable<TEntity> All();
         void Save(TEntity entity);
+      
 
     }
 }

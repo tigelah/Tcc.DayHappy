@@ -9,7 +9,7 @@ using Tcc.DayHappy.Dominio.Produtos;
 
 namespace Tcc.DayHappy.Data.Repositorios
 {
-    class OrcamentoRepository : Repository<Orcamento>
+    public class OrcamentoRepository : Repository<Orcamento>
     {
         public OrcamentoRepository(ApplicationDbContext context) : base(context)
         {

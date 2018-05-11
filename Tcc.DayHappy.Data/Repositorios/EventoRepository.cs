@@ -8,7 +8,7 @@ using Tcc.DayHappy.Dominio.Eventos;
 
 namespace Tcc.DayHappy.Data.Repositorios
 {
-    class EventoRepository : Repository<Evento>
+    public class EventoRepository : Repository<Evento>
     {
 
         public EventoRepository(ApplicationDbContext context) : base(context)

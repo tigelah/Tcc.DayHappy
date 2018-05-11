@@ -26,7 +26,7 @@ namespace Tcc.DayHappy.Dominio.Armazenar
             }
             else
             {
-                statusEntrega.update(codEvento, descricaoProblema, nilvelProblema, situacaoEntrega);
+                statusEntrega.Update(codEvento, descricaoProblema, nilvelProblema, situacaoEntrega);
             }
 
 

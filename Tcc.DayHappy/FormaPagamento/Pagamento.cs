@@ -5,7 +5,7 @@ using Tcc.DayHappy.Dominio.Orcamentos;
 
 namespace Tcc.DayHappy.Dominio.FormaPagamento
 {
-    public class Pagamento
+    public class Pagamento : Entity
     {
         public Orcamento CodOrcamento { get; private set; }
         public string StatusPagamento { get; private set; } // Confirmar se esse campo não vai ser boleano

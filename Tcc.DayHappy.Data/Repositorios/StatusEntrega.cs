@@ -9,7 +9,7 @@ using Tcc.DayHappy.Dominio.StatusEntregas;
 
 namespace Tcc.DayHappy.Data.Repositorios
 {
-    class StatusEntregaRepository : Repository<StatusEntrega>
+    public class StatusEntregaRepository : Repository<StatusEntrega>
     {
         public StatusEntregaRepository(ApplicationDbContext context) : base(context)
         {

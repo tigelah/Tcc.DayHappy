@@ -9,7 +9,7 @@ using Tcc.DayHappy.Dominio.Produtos;
 
 namespace Tcc.DayHappy.Data.Repositorios
 {
-    class ItinerarioRepository : Repository<Itinerario>
+    public class ItinerarioRepository : Repository<Itinerario>
     {
         public ItinerarioRepository(ApplicationDbContext context) : base(context)
         {

@@ -8,7 +8,7 @@ using Tcc.DayHappy.Dominio.Usuario;
 
 namespace Tcc.DayHappy.Data.Repositorios
 {
-    class PessoaFisicaRepository : Repository<PessoaFisica>
+   public class PessoaFisicaRepository : Repository<PessoaFisica>
     {
 
         public PessoaFisicaRepository(ApplicationDbContext context) : base (context)

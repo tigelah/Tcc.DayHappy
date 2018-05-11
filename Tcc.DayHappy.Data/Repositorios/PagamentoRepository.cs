@@ -8,7 +8,7 @@ using Tcc.DayHappy.Dominio.FormaPagamento;
 
 namespace Tcc.DayHappy.Data.Repositorios
 {
-    class PagamentoRepository : Repository<Pagamento>
+   public class PagamentoRepository : Repository<Pagamento>
     {
 
         public PagamentoRepository(ApplicationDbContext context) : base(context)

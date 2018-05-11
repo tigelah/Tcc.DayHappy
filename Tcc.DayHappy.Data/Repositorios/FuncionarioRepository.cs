@@ -23,9 +23,13 @@ namespace Tcc.DayHappy.Data.Repositorios
 
         public override IEnumerable<Funcionario> All()
         {
-            var query = _context.Set<Funcionario>().Include(p => p.Id).OrderBy(c => c.Pessoa);
+            var query = _context.Set<Funcionario>()
+                .Include(i => i.Pessoa)
+                .OrderBy(c => c.Pessoa.Nome);
 
             return query.Any() ? query.ToList() : new List<Funcionario>();
         }
+
+
     }
 }

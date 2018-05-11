@@ -38,5 +38,6 @@ namespace Tcc.DayHappy.Data.Repositorios
         {
             _context.Set<TEntity>().Add(entity);
         }
+
     }
 }
