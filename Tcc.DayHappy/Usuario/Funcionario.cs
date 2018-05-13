@@ -6,6 +6,7 @@ namespace Tcc.DayHappy.Dominio.Usuario
 {
     public class Funcionario :Entity
     {
+        public DateTime DataNasc { get; private set; }
         public string NomeCargo { get; private set; }
         public decimal Salario { get; private set; }
         public DateTime DataAdm { get; private set; }
@@ -17,7 +18,7 @@ namespace Tcc.DayHappy.Dominio.Usuario
 
         public Funcionario (string nomeCargo, decimal salario,DateTime dataAdm, Pessoa pessoa, Contato contato,string referencia)
         {
-            ValidacaoValoresSetPropriedades(nomeCargo, salario, dataAdm, pessoa, contato);
+            ValidacaoValoresSetPropriedades(nomeCargo, salario, dataAdm, pessoa , contato);
             Referencia = referencia;
         }
         //Lembrar de rever todos os tratamentos 
@@ -25,8 +26,8 @@ namespace Tcc.DayHappy.Dominio.Usuario
         {
             DomainException.Quando(string.IsNullOrEmpty(nomeCargo), "Cargo Digitado Invalido");
             DomainException.Quando(salario <= 0, "Salario invalido");
-            DomainException.Quando(pessoa == null, "Digite os campos corretamente");
             DomainException.Quando(contato == null, "Digite os campos corretamente");
+            DomainException.Quando(pessoa == null, "Digite os campos corretamente");
             NomeCargo = nomeCargo;
             Salario = salario;
             DataAdm = dataAdm;

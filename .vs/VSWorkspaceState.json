@@ -2,11 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\Tcc.DayHappy",
-    "\\Tcc.DayHappy.Data",
-    "\\Tcc.DayHappy.Data\\Contextos",
-    "\\Tcc.DayHappy.Data\\Identity",
-    "\\Tcc.DayHappy.Data\\Repositorios"
+    "\\Tcc.DayHappy\\ContaUsuarios",
+    "\\Tcc.DayHappy\\Eventos",
+    "\\Tcc.DayHappy\\FormaPagamento",
+    "\\Tcc.DayHappy\\Itinerarios",
+    "\\Tcc.DayHappy\\Orcamentos",
+    "\\Tcc.DayHappy\\Produtos",
+    "\\Tcc.DayHappy\\StatusEntregas",
+    "\\Tcc.DayHappy\\Usuario"
   ],
-  "SelectedNode": "\\Tcc.DayHappy\\Entity.cs",
+  "SelectedNode": "\\Tcc.DayHappy\\Usuario\\Contato.cs",
   "PreviewInSolutionExplorer": false
 }

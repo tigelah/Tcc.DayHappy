@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Tcc.DayHappy.Dominio.Usuario
 {
-    public class  Contato
+    public class  Contato : Entity
     {
        public string Cep { get; private set; }
        public string Logradouro { get; private set; }

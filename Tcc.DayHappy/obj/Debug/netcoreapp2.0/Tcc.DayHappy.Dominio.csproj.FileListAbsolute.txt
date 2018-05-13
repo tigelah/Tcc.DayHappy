@@ -7,8 +7,11 @@ C:\Users\3binfo\source\repos\Tcc.DayHappy\Tcc.DayHappy\bin\Debug\netcoreapp2.0\T
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.deps.json
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.dll
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.pdb
+G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.csprojAssemblyReference.cache
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.csproj.CoreCompileInputs.cache
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.AssemblyInfoInputs.cache
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.AssemblyInfo.cs
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.dll
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.pdb
+G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.runtimeconfig.json
+G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.runtimeconfig.dev.json
