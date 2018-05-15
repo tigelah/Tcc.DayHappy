@@ -10,5 +10,14 @@ G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Data\bin\Debug\netcoreapp2.0\Tcc.DayHapp
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Data\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Data.csproj.CopyComplete
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Data\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Data.dll
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Data\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Data.pdb
-G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Data\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Data.runtimeconfig.json
-G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Data\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Data.runtimeconfig.dev.json
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Data\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Data.deps.json
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Data\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Data.dll
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Data\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Data.pdb
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Data\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.dll
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Data\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.pdb
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Data\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Data.csprojResolveAssemblyReference.cache
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Data\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Data.csproj.CoreCompileInputs.cache
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Data\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Data.AssemblyInfoInputs.cache
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Data\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Data.AssemblyInfo.cs
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Data\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Data.dll
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Data\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Data.pdb

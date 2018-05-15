@@ -6,6 +6,7 @@ using Tcc.DayHappy.Data.Contextos;
 using Tcc.DayHappy.Data.Identity;
 using Tcc.DayHappy.Data.Repositorios;
 using Tcc.DayHappy.Dominio;
+using Tcc.DayHappy.Dominio.Armazenar;
 using Tcc.DayHappy.Dominio.ContaUsuarios;
 using Tcc.DayHappy.Dominio.Eventos;
 using Tcc.DayHappy.Dominio.FormaPagamento;
@@ -34,7 +35,8 @@ namespace Tcc.DayHappy.DI
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
             services.AddScoped(typeof(IRepository<Produto>),typeof(ProdutoRepository));
-            services.AddScoped(typeof(IRepository<Funcionario>),typeof(FuncionarioRepository));
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IRepository<Funcionario>),typeof(FuncionarioRepository));    
             services.AddScoped(typeof(IRepository<PessoaFisica>),typeof(PessoaFisicaRepository));
             services.AddScoped(typeof(IRepository<PessoaJuridica>),typeof(PessoaJuridicaRepository));
             services.AddScoped(typeof(IRepository<Orcamento>),typeof(OrcamentoRepository));
@@ -44,7 +46,9 @@ namespace Tcc.DayHappy.DI
             services.AddScoped(typeof(IRepository<StatusEntrega>), typeof(StatusEntregaRepository));
             services.AddScoped(typeof(IAuthentication), typeof(Authentication));
             services.AddScoped(typeof(IManager), typeof(Manager));
-            services.AddSingleton(typeof(IUnitOfWork), typeof(UnitOfWork));
+            services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
+            services.AddScoped(typeof(ProdutoArmazenar));
+
         }
     }
 }

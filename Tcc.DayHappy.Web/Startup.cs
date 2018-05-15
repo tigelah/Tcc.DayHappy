@@ -3,14 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Tcc.DayHappy.Web.Models;
-using Tcc.DayHappy.Web.Services;
-using Tcc.DayHappy.Data.Contextos;
 using StoreOfBuild.Web.Filters;
 using Tcc.DayHappy.DI;
 using Tcc.DayHappy.Dominio;
@@ -62,6 +57,8 @@ namespace Tcc.DayHappy.Web
             app.UseStaticFiles();
 
             app.UseAuthentication();
+
+            
 
             app.UseMvc(routes =>
             {

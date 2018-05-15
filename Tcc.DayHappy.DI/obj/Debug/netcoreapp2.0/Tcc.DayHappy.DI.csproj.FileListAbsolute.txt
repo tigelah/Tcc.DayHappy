@@ -3,8 +3,6 @@ G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.AssemblyInfoInputs.cache
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.AssemblyInfo.cs
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.deps.json
-G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.runtimeconfig.json
-G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.runtimeconfig.dev.json
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.dll
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.pdb
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Data.dll
@@ -14,3 +12,16 @@ G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.csproj.CopyComplete
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.dll
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.pdb
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.deps.json
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.dll
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.pdb
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Data.dll
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.dll
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Data.pdb
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.pdb
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.csprojResolveAssemblyReference.cache
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.csproj.CoreCompileInputs.cache
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.AssemblyInfoInputs.cache
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.AssemblyInfo.cs
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.dll
+C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.pdb

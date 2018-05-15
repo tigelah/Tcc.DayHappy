@@ -1,0 +1,72 @@
+﻿@model Tcc.DayHappy.Web.Models.ProdutoViewModel
+@using Tcc.DayHappy.Web.Models
+
+
+
+@{
+    ViewData["Title"] = "Produto";
+}
+
+<div class="row header">
+<div class="col-md-12">
+    <h2>Produto</h2>
+    <a href="/Produto" class="btn btn-primary">Back</a>
+</div>
+</div>
+<div class="row form-wrapper">
+    <div class="col-md-12">
+        <form id="form" class="form-horizontal" asp-action="CadastrarouEditar" asp-controller="Produtos"
+              data-ajax="true" data-ajax-method="POST" data-ajax-failure="formOnFail" data-ajax-success="window.location = '/Product'"
+              asp-anti-forgery>
+            <input type="hidden" class="form-control" asp-for="Id">
+            <div class="form-group">
+                <label asp-for="NomeProduto" class="control-label"></label>
+                <input asp-for="NomeProduto" class="form-control" />
+                <span asp-validation-for="NomeProduto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FaixaEtaria" class="control-label"></label>
+                <input asp-for="FaixaEtaria" class="form-control" />
+                <span asp-validation-for="FaixaEtaria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descricao" class="control-label"></label>
+                <input asp-for="Descricao" class="form-control" />
+                <span asp-validation-for="Descricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataCompra" class="control-label"></label>
+                <input asp-for="DataCompra" class="form-control" />
+                <span asp-validation-for="DataCompra" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorLocacao" class="control-label"></label>
+                <input asp-for="ValorLocacao" class="form-control" />
+                <span asp-validation-for="ValorLocacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorCusto" class="control-label"></label>
+                <input asp-for="ValorCusto" class="form-control" />
+                <span asp-validation-for="ValorCusto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CheckListPecas" class="control-label"></label>
+                <input asp-for="CheckListPecas" class="form-control" />
+                <span asp-validation-for="CheckListPecas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
