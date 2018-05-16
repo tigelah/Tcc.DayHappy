@@ -43,6 +43,5 @@ namespace Tcc.DayHappy.Data.Repositorios
         {
             _context.Set<TEntity>().Remove(entity);
         }
-
     }
 }

@@ -21,7 +21,8 @@ namespace Tcc.DayHappy.Web.Controllers
             _produtoArmazenar = produtoArmazenar;
 
         }
-        public IActionResult Index()
+        public IActionResult ListadeProdutos()
+
         {
             var produto = _produtoRepository.All();
             if(produto.Any())
@@ -64,15 +65,41 @@ namespace Tcc.DayHappy.Web.Controllers
         {
             _produtoArmazenar.Armazenar(viewModel.Id, viewModel.NomeProduto, viewModel.FaixaEtaria, viewModel.Descricao,
                 viewModel.DataCompra, viewModel.ValorLocacao, viewModel.ValorCusto, viewModel.CheckListPecas);
-            return RedirectToAction("CadastrarOuEditar");
+            return RedirectToAction("ListadeProdutos");
         }
 
+
+        public IActionResult DeletarProdutos(int id)
+        {
+            var produto = _produtoRepository.All();
+            if (produto.Any())
+            {
+                var viewmodel = produto.Select(p => new ProdutoViewModel
+                {
+                    Id = p.Id,
+                    NomeProduto = p.NomeProduto,
+                    FaixaEtaria = p.FaixaEtaria,
+                    Descricao = p.Descricao,
+                    DataCompra = p.DataCompra,
+                    ValorLocacao = p.ValorLocacao,
+                    ValorCusto = p.ValorCusto,
+                    CheckListPecas = p.CheckListPecas
+                });
+                return View(viewmodel);
+            }
+            return View();
+        }
+
+
+
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult DeletarProdutos(ProdutoViewModel viewModel)
         {
+
             _produtoArmazenar.Deletar(viewModel.Id, viewModel.NomeProduto, viewModel.FaixaEtaria, viewModel.Descricao,
-                viewModel.DataCompra, viewModel.ValorLocacao, viewModel.ValorCusto, viewModel.CheckListPecas);
-            return RedirectToAction("CadastrarOuEditar");
+                            viewModel.DataCompra, viewModel.ValorLocacao, viewModel.ValorCusto, viewModel.CheckListPecas);
+            return RedirectToAction("ListadeProdutos");
 
         }
     }

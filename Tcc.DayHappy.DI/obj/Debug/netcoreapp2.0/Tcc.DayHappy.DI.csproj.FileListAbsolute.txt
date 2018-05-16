@@ -11,6 +11,9 @@ C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.
 C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.AssemblyInfo.cs
 C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.dll
 C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.pdb
+G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.csproj.CoreCompileInputs.cache
+G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.AssemblyInfoInputs.cache
+G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.AssemblyInfo.cs
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.deps.json
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.dll
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.pdb
@@ -19,9 +22,6 @@ G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Data.pdb
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.pdb
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.csprojAssemblyReference.cache
-G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.csproj.CoreCompileInputs.cache
-G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.AssemblyInfoInputs.cache
-G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.AssemblyInfo.cs
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.csproj.CopyComplete
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.dll
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.DI\obj\Debug\netcoreapp2.0\Tcc.DayHappy.DI.pdb

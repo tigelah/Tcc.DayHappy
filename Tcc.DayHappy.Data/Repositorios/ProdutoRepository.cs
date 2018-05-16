@@ -24,7 +24,7 @@ namespace Tcc.DayHappy.Data.Repositorios
 
         public override IEnumerable<Produto> All()
         {
-            var query = _context.Set<Produto>().Include(p => p.Id).OrderBy(c => c.NomeProduto);
+            var query = _context.Set<Produto>().OrderBy(c => c.NomeProduto);
 
             return query.Any() ? query.ToList() : new List<Produto>();
         }

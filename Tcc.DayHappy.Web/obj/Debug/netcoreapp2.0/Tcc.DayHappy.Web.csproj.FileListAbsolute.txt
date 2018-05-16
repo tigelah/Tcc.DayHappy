@@ -15,6 +15,10 @@ C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.
 C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Data.pdb
 C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.dll
 C:\Users\igor\Desktop\Nova pasta\Tcc.DayHappy-improve_method_watch\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.pdb
+G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.csprojAssemblyReference.cache
+G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.csproj.CoreCompileInputs.cache
+G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.AssemblyInfoInputs.cache
+G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.AssemblyInfo.cs
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Web.deps.json
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Web.runtimeconfig.json
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Web.runtimeconfig.dev.json
@@ -26,10 +30,6 @@ G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.pdb
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.pdb
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Data.pdb
-G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.csprojAssemblyReference.cache
-G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.csproj.CoreCompileInputs.cache
-G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.AssemblyInfoInputs.cache
-G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.AssemblyInfo.cs
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.csproj.CopyComplete
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.dll
 G:\Rodrigo C#\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.pdb
