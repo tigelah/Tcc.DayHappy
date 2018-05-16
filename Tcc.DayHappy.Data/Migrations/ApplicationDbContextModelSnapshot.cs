@@ -17,7 +17,7 @@ namespace Tcc.DayHappy.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.0.3-rtm-10026")
+                .HasAnnotation("ProductVersion", "2.0.2-rtm-10011")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -269,7 +269,7 @@ namespace Tcc.DayHappy.Data.Migrations
                     b.ToTable("Produtos");
                 });
 
-            modelBuilder.Entity("Tcc.DayHappy.Dominio.Usuario.Contato", b =>
+            modelBuilder.Entity("Tcc.DayHappy.Dominio.Usuario.Funcionario", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -284,63 +284,33 @@ namespace Tcc.DayHappy.Data.Migrations
 
                     b.Property<int>("Contato2");
 
-                    b.Property<string>("Email");
-
-                    b.Property<string>("Logradouro");
-
-                    b.Property<string>("Numero");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Contato");
-                });
-
-            modelBuilder.Entity("Tcc.DayHappy.Dominio.Usuario.Funcionario", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int?>("ContatoId");
+                    b.Property<string>("Cpf");
 
                     b.Property<DateTime>("DataAdm");
 
                     b.Property<DateTime>("DataNasc");
 
-                    b.Property<string>("NomeCargo");
+                    b.Property<string>("Email");
 
-                    b.Property<int?>("PessoaId");
-
-                    b.Property<string>("Referencia");
-
-                    b.Property<decimal>("Salario");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ContatoId");
-
-                    b.HasIndex("PessoaId");
-
-                    b.ToTable("Funcionarios");
-                });
-
-            modelBuilder.Entity("Tcc.DayHappy.Dominio.Usuario.Pessoa", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Cpf");
-
-                    b.Property<DateTime>("DataNasc");
+                    b.Property<string>("Logradouro");
 
                     b.Property<string>("Nome");
 
+                    b.Property<string>("NomeCargo");
+
+                    b.Property<string>("Numero");
+
+                    b.Property<string>("Referencia");
+
                     b.Property<string>("Rg");
+
+                    b.Property<decimal>("Salario");
 
                     b.Property<string>("Sexo");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Pessoa");
+                    b.ToTable("Funcionarios");
                 });
 
             modelBuilder.Entity("Tcc.DayHappy.Dominio.Usuario.PessoaFisica", b =>
@@ -348,17 +318,35 @@ namespace Tcc.DayHappy.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int?>("ContatoId");
+                    b.Property<string>("Bairro");
 
-                    b.Property<int?>("PessoaId");
+                    b.Property<string>("Cep");
+
+                    b.Property<string>("Cidade");
+
+                    b.Property<int>("Contato1");
+
+                    b.Property<int>("Contato2");
+
+                    b.Property<string>("Cpf");
+
+                    b.Property<DateTime>("DataNasc");
+
+                    b.Property<string>("Email");
+
+                    b.Property<string>("Logradouro");
+
+                    b.Property<string>("Nome");
+
+                    b.Property<string>("Numero");
 
                     b.Property<string>("Referencia");
 
+                    b.Property<string>("Rg");
+
+                    b.Property<string>("Sexo");
+
                     b.HasKey("Id");
-
-                    b.HasIndex("ContatoId");
-
-                    b.HasIndex("PessoaId");
 
                     b.ToTable("PessoasFisica");
                 });
@@ -368,19 +356,31 @@ namespace Tcc.DayHappy.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Bairro");
+
+                    b.Property<string>("Cep");
+
+                    b.Property<string>("Cidade");
+
                     b.Property<string>("Cnpj");
 
-                    b.Property<int?>("ContatoId");
+                    b.Property<int>("Contato1");
+
+                    b.Property<int>("Contato2");
+
+                    b.Property<string>("Email");
 
                     b.Property<string>("InscEstadual");
 
+                    b.Property<string>("Logradouro");
+
                     b.Property<string>("NomeEmpresa");
+
+                    b.Property<string>("Numero");
 
                     b.Property<string>("Representante");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ContatoId");
 
                     b.ToTable("PessoasJuridica");
                 });
@@ -435,35 +435,6 @@ namespace Tcc.DayHappy.Data.Migrations
                     b.HasOne("Tcc.DayHappy.Dominio.Orcamentos.Orcamento", "Orcamento")
                         .WithMany()
                         .HasForeignKey("OrcamentoId");
-                });
-
-            modelBuilder.Entity("Tcc.DayHappy.Dominio.Usuario.Funcionario", b =>
-                {
-                    b.HasOne("Tcc.DayHappy.Dominio.Usuario.Contato", "Contato")
-                        .WithMany()
-                        .HasForeignKey("ContatoId");
-
-                    b.HasOne("Tcc.DayHappy.Dominio.Usuario.Pessoa", "Pessoa")
-                        .WithMany()
-                        .HasForeignKey("PessoaId");
-                });
-
-            modelBuilder.Entity("Tcc.DayHappy.Dominio.Usuario.PessoaFisica", b =>
-                {
-                    b.HasOne("Tcc.DayHappy.Dominio.Usuario.Contato", "Contato")
-                        .WithMany()
-                        .HasForeignKey("ContatoId");
-
-                    b.HasOne("Tcc.DayHappy.Dominio.Usuario.Pessoa", "Pessoa")
-                        .WithMany()
-                        .HasForeignKey("PessoaId");
-                });
-
-            modelBuilder.Entity("Tcc.DayHappy.Dominio.Usuario.PessoaJuridica", b =>
-                {
-                    b.HasOne("Tcc.DayHappy.Dominio.Usuario.Contato", "Contato")
-                        .WithMany()
-                        .HasForeignKey("ContatoId");
                 });
 #pragma warning restore 612, 618
         }

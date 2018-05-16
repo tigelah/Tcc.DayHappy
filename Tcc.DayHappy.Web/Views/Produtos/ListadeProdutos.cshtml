@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Tcc.DayHappy.Web.Models.ProdutoViewModel>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NomeProduto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FaixaEtaria)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Descricao)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataCompra)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ValorLocacao)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ValorCusto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CheckListPecas)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeProduto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FaixaEtaria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataCompra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorLocacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorCusto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheckListPecas)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

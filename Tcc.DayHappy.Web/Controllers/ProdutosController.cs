@@ -14,16 +14,13 @@ namespace Tcc.DayHappy.Web.Controllers
     {
         private readonly IRepository<Produto> _produtoRepository;
         private readonly ProdutoArmazenar _produtoArmazenar;
-
+    
        public ProdutosController(ProdutoArmazenar produtoArmazenar,IRepository<Produto> produtoRepository)
         {
             _produtoRepository = produtoRepository;
             _produtoArmazenar = produtoArmazenar;
 
         }
-
-        
-
         public IActionResult Index()
         {
             var produto = _produtoRepository.All();
@@ -43,9 +40,6 @@ namespace Tcc.DayHappy.Web.Controllers
             }
             return View();
         }
-
-        
-
         public IActionResult CadastrarOuEditar(int id)
         {
             var viewModel = new ProdutoViewModel();
@@ -65,7 +59,6 @@ namespace Tcc.DayHappy.Web.Controllers
             }
             return View(viewModel);
         }
-
         [HttpPost]
         public IActionResult CadastrarOuEditar(ProdutoViewModel viewModel)
         {
@@ -74,5 +67,13 @@ namespace Tcc.DayHappy.Web.Controllers
             return RedirectToAction("CadastrarOuEditar");
         }
 
+        [HttpPost]
+        public IActionResult DeletarProdutos(ProdutoViewModel viewModel)
+        {
+            _produtoArmazenar.Deletar(viewModel.Id, viewModel.NomeProduto, viewModel.FaixaEtaria, viewModel.Descricao,
+                viewModel.DataCompra, viewModel.ValorLocacao, viewModel.ValorCusto, viewModel.CheckListPecas);
+            return RedirectToAction("CadastrarOuEditar");
+
+        }
     }
 }

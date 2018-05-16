@@ -39,5 +39,10 @@ namespace Tcc.DayHappy.Data.Repositorios
             _context.Set<TEntity>().Add(entity);
         }
 
+        public virtual void Delete(TEntity entity)
+        {
+            _context.Set<TEntity>().Remove(entity);
+        }
+
     }
 }

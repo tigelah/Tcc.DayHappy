@@ -14,19 +14,37 @@ namespace Tcc.DayHappy.Dominio.Storer
             _pessoaFisicaRepository = pessoaFisicaRepository;
         }
 
-        public void Armazenar(int id, Pessoa pessoa, Contato contato, string referencia)
+        public void Armazenar(int id, string nome, DateTime dataNasc, string sexo, string cpf, string rg,string referencia, int contato1, 
+            string cep, string logradouro,string numero, string bairro, string cidade, int contato2, string email)
         {
             var pessoaFisica = _pessoaFisicaRepository.GetById(id);
 
             if(pessoaFisica == null)
             {
-                pessoaFisica = new PessoaFisica(pessoa, contato, referencia);
+                pessoaFisica = new PessoaFisica(nome,dataNasc,sexo,cpf,rg,referencia,contato1,cep,logradouro,numero,bairro,cidade,contato2,email);
                 _pessoaFisicaRepository.Save(pessoaFisica);
             }
             else
             {
-                pessoaFisica.Update(pessoa, contato, referencia);
+                pessoaFisica.Update(nome, dataNasc, sexo, cpf, rg, referencia, contato1, cep, logradouro, numero, bairro, cidade, contato2, email);
             }
         }
+        public void Deletar(int id, string nome, DateTime dataNasc, string sexo, string cpf, string rg, string referencia, int contato1, string cep, 
+            string logradouro,string numero, string bairro, string cidade, int contato2, string email)
+        {
+            var pessoaFisica = _pessoaFisicaRepository.GetById(id);
+
+            if (pessoaFisica != null)
+            {
+                
+                _pessoaFisicaRepository.Delete(pessoaFisica);
+            }
+            else
+            {
+                pessoaFisica.Update(nome, dataNasc, sexo, cpf, rg,referencia, contato1, cep, logradouro, numero, bairro, cidade, contato2, email);
+            }
+        }
+
+
     }
 }

@@ -27,11 +27,12 @@ namespace Tcc.DayHappy.Data.Repositorios
 
         public override IEnumerable<PessoaFisica> All()
         {
-            var query = _context.Set<PessoaFisica>().Include(p => p.Id).OrderBy(c => c.Pessoa.Nome);
+            var query = _context.Set<PessoaFisica>().Include(p => p.Id).OrderBy(c => c.Nome);
 
 
             return query.Any() ? query.ToList() : new List<PessoaFisica>();
         }
+
 
 
     }

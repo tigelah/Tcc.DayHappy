@@ -30,5 +30,23 @@ namespace Tcc.DayHappy.Dominio.Armazenar
                 produto.Update(nomeProduto, faixaEtaria, descricao, dataCompra, valorLocacao, valorCusto, checkListPecas);
             }
         }
+
+        public void Deletar(int id, string nomeProduto, string faixaEtaria, string descricao, DateTime dataCompra,
+            decimal valorLocacao, decimal valorCusto, string checkListPecas)
+        {
+            var produto = _produtoRepository.GetById(id);
+
+            if (produto != null)
+            {
+                _produtoRepository.Delete(produto);
+            }
+            else
+            {
+                produto.Update(nomeProduto, faixaEtaria, descricao, dataCompra, valorLocacao, valorCusto, checkListPecas);
+            }
+
+
+
+        }
     }
 }
