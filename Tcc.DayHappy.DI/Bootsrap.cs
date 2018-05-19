@@ -14,6 +14,7 @@ using Tcc.DayHappy.Dominio.Itinerarios;
 using Tcc.DayHappy.Dominio.Orcamentos;
 using Tcc.DayHappy.Dominio.Produtos;
 using Tcc.DayHappy.Dominio.StatusEntregas;
+using Tcc.DayHappy.Dominio.Storer;
 using Tcc.DayHappy.Dominio.Usuario;
 
 namespace Tcc.DayHappy.DI
@@ -48,6 +49,13 @@ namespace Tcc.DayHappy.DI
             services.AddScoped(typeof(IManager), typeof(Manager));
             services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
             services.AddScoped(typeof(ProdutoArmazenar));
+            services.AddScoped(typeof(PessoaFisica));
+            services.AddScoped(typeof(PessoaFisicaArmazenar));
+            services.AddScoped(typeof(PessoaJuridica));
+            services.AddScoped(typeof(PessoaJuridicaArmazenar));
+            services.AddScoped(typeof(FuncionarioArmazenar));
+            services.AddScoped(typeof(OrcamentoArmazenar));
+
 
         }
     }

@@ -1,0 +1,118 @@
+﻿@model Tcc.DayHappy.Web.Models.OrcamentoViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<h4>OrcamentoViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Cep" class="control-label"></label>
+                <input asp-for="Cep" class="form-control" />
+                <span asp-validation-for="Cep" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Logradouro" class="control-label"></label>
+                <input asp-for="Logradouro" class="form-control" />
+                <span asp-validation-for="Logradouro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Numero" class="control-label"></label>
+                <input asp-for="Numero" class="form-control" />
+                <span asp-validation-for="Numero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bairro" class="control-label"></label>
+                <input asp-for="Bairro" class="form-control" />
+                <span asp-validation-for="Bairro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cidade" class="control-label"></label>
+                <input asp-for="Cidade" class="form-control" />
+                <span asp-validation-for="Cidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Referencia" class="control-label"></label>
+                <input asp-for="Referencia" class="form-control" />
+                <span asp-validation-for="Referencia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contato1" class="control-label"></label>
+                <input asp-for="Contato1" class="form-control" />
+                <span asp-validation-for="Contato1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contato2" class="control-label"></label>
+                <input asp-for="Contato2" class="form-control" />
+                <span asp-validation-for="Contato2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataEvento" class="control-label"></label>
+                <input asp-for="DataEvento" class="form-control" />
+                <span asp-validation-for="DataEvento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HorarioInicio" class="control-label"></label>
+                <input asp-for="HorarioInicio" class="form-control" />
+                <span asp-validation-for="HorarioInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HorarioTermino" class="control-label"></label>
+                <input asp-for="HorarioTermino" class="form-control" />
+                <span asp-validation-for="HorarioTermino" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoEvento" class="control-label"></label>
+                <input asp-for="TipoEvento" class="form-control" />
+                <span asp-validation-for="TipoEvento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorFrete" class="control-label"></label>
+                <input asp-for="ValorFrete" class="form-control" />
+                <span asp-validation-for="ValorFrete" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorTotalServ" class="control-label"></label>
+                <input asp-for="ValorTotalServ" class="form-control" />
+                <span asp-validation-for="ValorTotalServ" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorTotalProd" class="control-label"></label>
+                <input asp-for="ValorTotalProd" class="form-control" />
+                <span asp-validation-for="ValorTotalProd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataValidadeOrc" class="control-label"></label>
+                <input asp-for="DataValidadeOrc" class="form-control" />
+                <span asp-validation-for="DataValidadeOrc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StatusOrc" class="control-label"></label>
+                <input asp-for="StatusOrc" class="form-control" />
+                <span asp-validation-for="StatusOrc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

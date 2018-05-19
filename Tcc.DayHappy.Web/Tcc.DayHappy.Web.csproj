@@ -18,4 +18,8 @@
     <ProjectReference Include="..\Tcc.DayHappy\Tcc.DayHappy.Dominio.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Validations\" />
+  </ItemGroup>
+
 </Project>

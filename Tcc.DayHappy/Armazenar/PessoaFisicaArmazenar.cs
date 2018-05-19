@@ -9,7 +9,7 @@ namespace Tcc.DayHappy.Dominio.Storer
     {
         private readonly IRepository<PessoaFisica> _pessoaFisicaRepository;
 
-        public PessoaFisicaArmazenar( IRepository<PessoaFisica> pessoaFisicaRepository)
+        public PessoaFisicaArmazenar(IRepository<PessoaFisica> pessoaFisicaRepository)
         {
             _pessoaFisicaRepository = pessoaFisicaRepository;
         }
@@ -34,15 +34,11 @@ namespace Tcc.DayHappy.Dominio.Storer
         {
             var pessoaFisica = _pessoaFisicaRepository.GetById(id);
 
-            if (pessoaFisica != null)
+            if (pessoaFisica.Id == id)
             {
-                
                 _pessoaFisicaRepository.Delete(pessoaFisica);
             }
-            else
-            {
-                pessoaFisica.Update(nome, dataNasc, sexo, cpf, rg,referencia, contato1, cep, logradouro, numero, bairro, cidade, contato2, email);
-            }
+
         }
 
 

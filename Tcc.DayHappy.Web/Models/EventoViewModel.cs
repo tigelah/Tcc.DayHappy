@@ -7,5 +7,6 @@ namespace Tcc.DayHappy.Web.Models
 {
     public class EventoViewModel
     {
+        public IEnumerable<ProdutoViewModel> Orcamentos { get; set; }
     }
 }

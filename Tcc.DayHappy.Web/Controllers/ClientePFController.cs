@@ -71,7 +71,7 @@ namespace Tcc.DayHappy.Web.Controllers
                
                 return View(viewModel);
             }
-            return View(viewModel);
+            return View();
         }
         [HttpPost]
         public IActionResult CadastrarCliente(ClientePFViewModel viewModel)

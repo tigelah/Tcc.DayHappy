@@ -10,6 +10,7 @@ namespace Tcc.DayHappy.Dominio
         IEnumerable<TEntity> All();
         void Save(TEntity entity);
         void Delete(TEntity entity);
+        void Update(TEntity entity);
       
 
     }

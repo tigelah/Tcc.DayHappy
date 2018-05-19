@@ -78,36 +78,6 @@ namespace Tcc.DayHappy.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Orcamentos",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Bairro = table.Column<string>(nullable: true),
-                    Cep = table.Column<string>(nullable: true),
-                    Cidade = table.Column<string>(nullable: true),
-                    Contato1 = table.Column<string>(nullable: true),
-                    Contato2 = table.Column<string>(nullable: true),
-                    DataEvento = table.Column<DateTime>(nullable: false),
-                    DataValidadeOrc = table.Column<DateTime>(nullable: false),
-                    Email = table.Column<string>(nullable: true),
-                    HorarioInicio = table.Column<DateTime>(nullable: false),
-                    HorarioTermino = table.Column<DateTime>(nullable: false),
-                    Logradouro = table.Column<string>(nullable: true),
-                    Numero = table.Column<string>(nullable: true),
-                    Referencia = table.Column<string>(nullable: true),
-                    StatusOrc = table.Column<string>(nullable: true),
-                    TipoEvento = table.Column<string>(nullable: true),
-                    ValorFrete = table.Column<decimal>(nullable: false),
-                    ValorTotalProd = table.Column<decimal>(nullable: false),
-                    ValorTotalServ = table.Column<decimal>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Orcamentos", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "PessoasFisica",
                 columns: table => new
                 {
@@ -283,6 +253,50 @@ namespace Tcc.DayHappy.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Orcamentos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Bairro = table.Column<string>(nullable: true),
+                    Cep = table.Column<string>(nullable: true),
+                    Cidade = table.Column<string>(nullable: true),
+                    Contato1 = table.Column<string>(nullable: true),
+                    Contato2 = table.Column<string>(nullable: true),
+                    DataEvento = table.Column<DateTime>(nullable: false),
+                    DataValidadeOrc = table.Column<DateTime>(nullable: false),
+                    Email = table.Column<string>(nullable: true),
+                    HorarioInicio = table.Column<DateTime>(nullable: false),
+                    HorarioTermino = table.Column<DateTime>(nullable: false),
+                    Logradouro = table.Column<string>(nullable: true),
+                    Numero = table.Column<string>(nullable: true),
+                    PessoaJuridicaId = table.Column<int>(nullable: true),
+                    PesssoaFisicaId = table.Column<int>(nullable: true),
+                    Referencia = table.Column<string>(nullable: true),
+                    StatusOrc = table.Column<string>(nullable: true),
+                    TipoEvento = table.Column<string>(nullable: true),
+                    ValorFrete = table.Column<decimal>(nullable: false),
+                    ValorTotalProd = table.Column<decimal>(nullable: false),
+                    ValorTotalServ = table.Column<decimal>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Orcamentos", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Orcamentos_PessoasJuridica_PessoaJuridicaId",
+                        column: x => x.PessoaJuridicaId,
+                        principalTable: "PessoasJuridica",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Orcamentos_PessoasFisica_PesssoaFisicaId",
+                        column: x => x.PesssoaFisicaId,
+                        principalTable: "PessoasFisica",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Itinerarios",
                 columns: table => new
                 {
@@ -347,6 +361,16 @@ namespace Tcc.DayHappy.Data.Migrations
                 name: "IX_Itinerarios_OrcamentoId",
                 table: "Itinerarios",
                 column: "OrcamentoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Orcamentos_PessoaJuridicaId",
+                table: "Orcamentos",
+                column: "PessoaJuridicaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Orcamentos_PesssoaFisicaId",
+                table: "Orcamentos",
+                column: "PesssoaFisicaId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -373,12 +397,6 @@ namespace Tcc.DayHappy.Data.Migrations
                 name: "Itinerarios");
 
             migrationBuilder.DropTable(
-                name: "PessoasFisica");
-
-            migrationBuilder.DropTable(
-                name: "PessoasJuridica");
-
-            migrationBuilder.DropTable(
                 name: "Produtos");
 
             migrationBuilder.DropTable(
@@ -389,6 +407,12 @@ namespace Tcc.DayHappy.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Orcamentos");
+
+            migrationBuilder.DropTable(
+                name: "PessoasJuridica");
+
+            migrationBuilder.DropTable(
+                name: "PessoasFisica");
         }
     }
 }

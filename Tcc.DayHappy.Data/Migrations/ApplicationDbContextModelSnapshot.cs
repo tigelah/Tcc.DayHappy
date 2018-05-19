@@ -228,6 +228,10 @@ namespace Tcc.DayHappy.Data.Migrations
 
                     b.Property<string>("Numero");
 
+                    b.Property<int?>("PessoaJuridicaId");
+
+                    b.Property<int?>("PesssoaFisicaId");
+
                     b.Property<string>("Referencia");
 
                     b.Property<string>("StatusOrc");
@@ -241,6 +245,10 @@ namespace Tcc.DayHappy.Data.Migrations
                     b.Property<decimal>("ValorTotalServ");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("PessoaJuridicaId");
+
+                    b.HasIndex("PesssoaFisicaId");
 
                     b.ToTable("Orcamentos");
                 });
@@ -435,6 +443,17 @@ namespace Tcc.DayHappy.Data.Migrations
                     b.HasOne("Tcc.DayHappy.Dominio.Orcamentos.Orcamento", "Orcamento")
                         .WithMany()
                         .HasForeignKey("OrcamentoId");
+                });
+
+            modelBuilder.Entity("Tcc.DayHappy.Dominio.Orcamentos.Orcamento", b =>
+                {
+                    b.HasOne("Tcc.DayHappy.Dominio.Usuario.PessoaJuridica", "PessoaJuridica")
+                        .WithMany()
+                        .HasForeignKey("PessoaJuridicaId");
+
+                    b.HasOne("Tcc.DayHappy.Dominio.Usuario.PessoaFisica", "PesssoaFisica")
+                        .WithMany()
+                        .HasForeignKey("PesssoaFisicaId");
                 });
 #pragma warning restore 612, 618
         }

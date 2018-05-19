@@ -16,7 +16,7 @@ namespace Tcc.DayHappy.Data.Repositorios
         }
         public override Produto GetById(int id)
         {
-            var query = _context.Set<Produto>().Include(e => e.Id).Where(e => e.Id == id);
+            var query = _context.Set<Produto>().Where(e => e.Id == id);
             if (query.Any())
                 return query.First();
             return null;
@@ -28,5 +28,6 @@ namespace Tcc.DayHappy.Data.Repositorios
 
             return query.Any() ? query.ToList() : new List<Produto>();
         }
+
     }
 }

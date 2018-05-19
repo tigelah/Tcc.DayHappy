@@ -45,10 +45,10 @@ namespace Tcc.DayHappy.Web.Controllers
         {
             var viewModel = new ProdutoViewModel();
 
+
             if (id > 0)
             {
                 var produto = _produtoRepository.GetById(id);
-                viewModel.Id = produto.Id;
                 viewModel.NomeProduto = produto.NomeProduto;
                 viewModel.FaixaEtaria = produto.FaixaEtaria;
                 viewModel.Descricao = produto.Descricao;
@@ -71,26 +71,24 @@ namespace Tcc.DayHappy.Web.Controllers
 
         public IActionResult DeletarProdutos(int id)
         {
-            var produto = _produtoRepository.All();
-            if (produto.Any())
+            var viewModel = new ProdutoViewModel();
             {
-                var viewmodel = produto.Select(p => new ProdutoViewModel
+                if (id > 0)
                 {
-                    Id = p.Id,
-                    NomeProduto = p.NomeProduto,
-                    FaixaEtaria = p.FaixaEtaria,
-                    Descricao = p.Descricao,
-                    DataCompra = p.DataCompra,
-                    ValorLocacao = p.ValorLocacao,
-                    ValorCusto = p.ValorCusto,
-                    CheckListPecas = p.CheckListPecas
-                });
-                return View(viewmodel);
+                    var produto = _produtoRepository.GetById(id);
+                    viewModel.Id = produto.Id;
+                    viewModel.NomeProduto = produto.NomeProduto;
+                    viewModel.FaixaEtaria = produto.FaixaEtaria;
+                    viewModel.Descricao = produto.Descricao;
+                    viewModel.DataCompra = produto.DataCompra;
+                    viewModel.ValorLocacao = produto.ValorLocacao;
+                    viewModel.ValorCusto = produto.ValorCusto;
+                    viewModel.CheckListPecas = produto.CheckListPecas;
+                    return View(viewModel);
+                }
+                return View(viewModel);
             }
-            return View();
         }
-
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]

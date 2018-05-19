@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Tcc.DayHappy.Dominio.Usuario;
 
 namespace Tcc.DayHappy.Dominio.Orcamentos
 {
    public class Orcamento : Entity
     {
+        public virtual PessoaFisica PesssoaFisica { get; private set; }
+        public virtual PessoaJuridica PessoaJuridica { get; private set; }
         public string Cep { get; private set; }
         public string Logradouro { get; private set; }
         public string Numero { get; private set; }
@@ -29,17 +32,17 @@ namespace Tcc.DayHappy.Dominio.Orcamentos
 
         public Orcamento(string cep, string logradouro, string numero, string bairro, string cidade, string referencia
             , string contato1, string contato2, string email, DateTime dataEvento, DateTime horarioInicio, DateTime horarioTermino, string tipoEvento
-            , Decimal valorFrete, Decimal valorTotalServ, Decimal valorTotalProd, DateTime dataValidadeOrc, string statusOrc)
+            , Decimal valorFrete, Decimal valorTotalServ, Decimal valorTotalProd, DateTime dataValidadeOrc, string statusOrc, PessoaFisica pessoaFisica, PessoaJuridica pessoaJuridica)
         {
             ValidacaoValoresSetPropriedades(cep, logradouro, numero, bairro, cidade, referencia
            , contato1, contato2, email, dataEvento, horarioInicio, horarioTermino, tipoEvento
-           , valorFrete, valorTotalServ, valorTotalProd, dataValidadeOrc, statusOrc);
+           , valorFrete, valorTotalServ, valorTotalProd, dataValidadeOrc, statusOrc,pessoaFisica, pessoaJuridica);
         }
 
         //Lembrar dos tratamentos das DATAS DE EVENTO HORARIO e VALIDADE DE ORCAMENTO e STATUS ORCAMENTO
         private void ValidacaoValoresSetPropriedades(string cep, string logradouro, string numero, string bairro, string cidade, string referencia
             ,string contato1,string contato2, string email,DateTime dataEvento,DateTime horarioInicio,DateTime horarioTermino, string tipoEvento
-            ,Decimal valorFrete,Decimal valorTotalServ,Decimal valorTotalProd, DateTime dataValidadeOrc, string statusOrc)
+            ,Decimal valorFrete,Decimal valorTotalServ,Decimal valorTotalProd, DateTime dataValidadeOrc, string statusOrc, PessoaFisica pessoaFisica, PessoaJuridica pessoaJuridica)
         {
             DomainException.Quando(string.IsNullOrEmpty(cep), "Cep é Obrigatório");
             DomainException.Quando(cep.Length < 8, "Cep Invalido");
@@ -58,6 +61,8 @@ namespace Tcc.DayHappy.Dominio.Orcamentos
             DomainException.Quando(valorFrete < 0, "Valor Frete Invalido");
             DomainException.Quando(valorTotalProd < 0, "Valor Frete Invalido");
             DomainException.Quando(valorTotalServ < 0, "Valor Frete Invalido");
+            DomainException.Quando(pessoaFisica == null, "Cliente Invalido");
+            DomainException.Quando(pessoaJuridica == null, "Cliente Invalido");
 
             Cep = cep;
             Logradouro = logradouro;
@@ -76,17 +81,16 @@ namespace Tcc.DayHappy.Dominio.Orcamentos
             ValorTotalServ = valorTotalServ;
             ValorTotalProd = valorTotalProd;
             DataValidadeOrc = dataValidadeOrc;
-            StatusOrc = statusOrc;
-           
+
         }
 
         public void Update(string cep, string logradouro, string numero, string bairro, string cidade, string referencia
             , string contato1, string contato2, string email, DateTime dataEvento, DateTime horarioInicio, DateTime horarioTermino, string tipoEvento
-            , Decimal valorFrete, Decimal valorTotalServ, Decimal valorTotalProd, DateTime dataValidadeOrc, string statusOrc)
+            , Decimal valorFrete, Decimal valorTotalServ, Decimal valorTotalProd, DateTime dataValidadeOrc, string statusOrc,PessoaFisica pessoaFisica,PessoaJuridica pessoaJuridica)
         {
             ValidacaoValoresSetPropriedades( cep,  logradouro, numero, bairro,  cidade, referencia
             , contato1,  contato2, email,  dataEvento, horarioInicio, horarioTermino,  tipoEvento
-            ,  valorFrete,  valorTotalServ,  valorTotalProd, dataValidadeOrc, statusOrc);
+            ,  valorFrete,  valorTotalServ,  valorTotalProd, dataValidadeOrc, statusOrc, pessoaFisica, pessoaJuridica);
         }
 
     }
