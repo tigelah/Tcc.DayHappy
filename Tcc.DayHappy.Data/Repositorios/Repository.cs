@@ -7,7 +7,7 @@ using Tcc.DayHappy.Dominio;
 
 namespace Tcc.DayHappy.Data.Repositorios
 {
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity
+    /*public class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity
     {
         protected readonly ApplicationDbContext _context;
 
@@ -39,5 +39,5 @@ namespace Tcc.DayHappy.Data.Repositorios
             _context.Set<TEntity>().Add(entity);
         }
 
-    }
+    }*/
 }
