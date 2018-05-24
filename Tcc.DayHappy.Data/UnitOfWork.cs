@@ -11,6 +11,7 @@ namespace Tcc.DayHappy.Data
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
+
         }
 
         public async Task Commit()
