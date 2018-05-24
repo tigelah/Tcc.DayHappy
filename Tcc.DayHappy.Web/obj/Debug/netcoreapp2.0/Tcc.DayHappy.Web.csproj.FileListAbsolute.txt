@@ -155,3 +155,21 @@ C:\Users\igor\Desktop\Nova pasta (4)\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\net
 C:\Users\igor\Desktop\Nova pasta (4)\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.csproj.CopyComplete
 C:\Users\igor\Desktop\Nova pasta (4)\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.dll
 C:\Users\igor\Desktop\Nova pasta (4)\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.pdb
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Web.deps.json
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Web.runtimeconfig.json
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Web.runtimeconfig.dev.json
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Web.dll
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Web.pdb
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Data.dll
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.dll
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.dll
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Data.pdb
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.DI.pdb
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.pdb
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.csprojAssemblyReference.cache
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.csproj.CoreCompileInputs.cache
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.AssemblyInfoInputs.cache
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.AssemblyInfo.cs
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.csproj.CopyComplete
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.dll
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy.Web\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Web.pdb

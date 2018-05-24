@@ -84,3 +84,12 @@ C:\Users\igor\Desktop\Nova pasta (4)\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcore
 C:\Users\igor\Desktop\Nova pasta (4)\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.AssemblyInfo.cs
 C:\Users\igor\Desktop\Nova pasta (4)\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.dll
 C:\Users\igor\Desktop\Nova pasta (4)\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.pdb
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.deps.json
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.dll
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy\bin\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.pdb
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.csprojAssemblyReference.cache
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.AssemblyInfoInputs.cache
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.AssemblyInfo.cs
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.dll
+C:\Users\igor\Desktop\tcc-final-git\Tcc.DayHappy\Tcc.DayHappy\obj\Debug\netcoreapp2.0\Tcc.DayHappy.Dominio.pdb

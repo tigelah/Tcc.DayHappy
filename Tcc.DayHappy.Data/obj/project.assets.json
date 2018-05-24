@@ -4113,11 +4113,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\igor\\Desktop\\Nova pasta (4)\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj",
+      "projectUniqueName": "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj",
       "projectName": "Tcc.DayHappy.Data",
-      "projectPath": "C:\\Users\\igor\\Desktop\\Nova pasta (4)\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj",
+      "projectPath": "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj",
       "packagesPath": "C:\\Users\\igor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\igor\\Desktop\\Nova pasta (4)\\Tcc.DayHappy\\Tcc.DayHappy.Data\\obj\\",
+      "outputPath": "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4136,8 +4136,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\igor\\Desktop\\Nova pasta (4)\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj": {
-              "projectPath": "C:\\Users\\igor\\Desktop\\Nova pasta (4)\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj"
+            "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj": {
+              "projectPath": "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj"
             }
           }
         }

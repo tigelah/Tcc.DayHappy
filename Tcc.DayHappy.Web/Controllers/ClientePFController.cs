@@ -26,10 +26,17 @@ namespace Tcc.DayHappy.Web.Controllers
             _contatoArmazenar = contatoArmazenar;
         }
 
-        /*
-          public IActionResult Index()
-          {
-              var pessoafisica = _pessoaFisicaRepository.GetAll();
+
+        public async Task<IActionResult> Index(string sortOrder, string searchString)
+        {
+               ViewData["CurrentFilter"] = searchString;
+            var pessoafisica = from s in _pessoaFisicaRepository.GetAll()
+                               select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                pessoafisica = pessoafisica.Where(s => s.NOME_PES_FIS.Contains(searchString)
+                                       || s.CPF_PES_FIS.Contains(searchString));
+            }
               if (pessoafisica.Any())
               {
                   var viewmodel = pessoafisica.Select(p => new ClientePFViewModel
@@ -47,8 +54,8 @@ namespace Tcc.DayHappy.Web.Controllers
               return View();
           }
          
-     */
-        public async Task<IActionResult> Index(string sortOrder,string searchString)
+     
+     /*   public async Task<IActionResult> Index(string sortOrder,string searchString)
         {
             ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
@@ -76,7 +83,7 @@ namespace Tcc.DayHappy.Web.Controllers
                     break;
             }
             return View();
-        }
+        }*/
         
         public IActionResult CadastrarCliente(int id)
         {

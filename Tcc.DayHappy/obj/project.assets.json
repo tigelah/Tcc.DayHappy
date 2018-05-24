@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\igor\\Desktop\\Nova pasta (4)\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj",
       "projectName": "Tcc.DayHappy.Dominio",
-      "projectPath": "C:\\Users\\igor\\Desktop\\Nova pasta (4)\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj",
+      "projectPath": "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj",
       "packagesPath": "C:\\Users\\igor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\igor\\Desktop\\Nova pasta (4)\\Tcc.DayHappy\\Tcc.DayHappy\\obj\\",
+      "outputPath": "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

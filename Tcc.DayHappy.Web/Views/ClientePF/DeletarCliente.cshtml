@@ -114,7 +114,7 @@
                 Deseja realmente excluir este item?
             </div>
             <div class="modal-footer">
-                <input type="submit" value="Delete" class="btn btn-success" /> Sim
+                <input asp-controller="DeletarCliente" type="submit"name="Deletar" value="@Html.DisplayNameFor(model => model.Id)"  class="btn btn-danger"/> 
                 <a asp-action="DeletarCliente">N&atilde;o</a>
             </div>
         </div>
