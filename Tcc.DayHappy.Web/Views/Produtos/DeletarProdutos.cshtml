@@ -1,0 +1,80 @@
+﻿@model Tcc.DayHappy.Web.Models.ProdutoViewModel
+@using Tcc.DayHappy.Web.Models
+
+@{
+    ViewData["Title"] = "Produto";
+}
+
+
+<div class="row header">
+    <div class="col-md-12">
+        <h2>Produto</h2>
+        <a href="/Produto" class="btn btn-primary">Back</a>
+    </div>
+</div>
+<div class="row form-wrapper">
+    <div class="col-md-12">
+        <form id="form" class="form-horizontal" asp-action="DeletarProdutos" asp-controller="Produtos"
+              data-ajax="true" data-ajax-method="POST" data-ajax-failure="formOnFail" data-ajax-success="window.location = '/Produto'"
+              asp-anti-forgery>
+            <h4>Deletar</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Id)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Id)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.NomeProduto)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.NomeProduto)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Descricao)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Descricao)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.FaixaEtaria)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.FaixaEtaria)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.ValorCusto)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.ValorCusto)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.ValorLocacao)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.ValorLocacao)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.DataCompra)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.DataCompra)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.CheckListPecas)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.CheckListPecas)
+                </dd>
+                <dt>
+            </dl>
+            <div class="form-group">
+                <input type="hidden" name="Id" value="@Html.DisplayNameFor(model => model.Id)" />
+                <button type="submit" class="btn btn-danger"> Deletar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
