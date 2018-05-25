@@ -13224,23 +13224,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\igor\\.nuget\\packages\\": {},
+    "C:\\Users\\Fernando\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy.Web\\Tcc.DayHappy.Web.csproj",
+      "projectUniqueName": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.Web\\Tcc.DayHappy.Web.csproj",
       "projectName": "Tcc.DayHappy.Web",
-      "projectPath": "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy.Web\\Tcc.DayHappy.Web.csproj",
-      "packagesPath": "C:\\Users\\igor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy.Web\\obj\\",
+      "projectPath": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.Web\\Tcc.DayHappy.Web.csproj",
+      "packagesPath": "C:\\Users\\Fernando\\.nuget\\packages\\",
+      "outputPath": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13253,14 +13253,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj": {
-              "projectPath": "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj"
+            "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj": {
+              "projectPath": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.Data\\Tcc.DayHappy.Data.csproj"
             },
-            "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy.DI\\Tcc.DayHappy.DI.csproj": {
-              "projectPath": "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy.DI\\Tcc.DayHappy.DI.csproj"
+            "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.DI\\Tcc.DayHappy.DI.csproj": {
+              "projectPath": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy.DI\\Tcc.DayHappy.DI.csproj"
             },
-            "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj": {
-              "projectPath": "C:\\Users\\igor\\Desktop\\tcc-final-git\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj"
+            "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj": {
+              "projectPath": "G:\\Rodrigo C#\\Tcc.DayHappy\\Tcc.DayHappy\\Tcc.DayHappy.Dominio.csproj"
             }
           }
         }

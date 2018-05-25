@@ -28,8 +28,7 @@ namespace Tcc.DayHappy.Dominio.Storer
                 pessoaFisica.Update(nome, dataNasc, sexo, cpf, rg);
             }
         }
-        public void Deletar(int id, string nome, DateTime dataNasc, string sexo, string cpf, string rg, string referencia, int contato1, string cep, 
-            string logradouro,string numero, string bairro, string cidade, int contato2, string email)
+        public void Deletar(int id)
         {
             var pessoaFisica = _pessoaFisicaRepository.GetById(id);
 

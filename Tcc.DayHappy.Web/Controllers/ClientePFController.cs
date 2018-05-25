@@ -29,7 +29,9 @@ namespace Tcc.DayHappy.Web.Controllers
 
         public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
-               ViewData["CurrentFilter"] = searchString;
+            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
+            ViewData["CurrentFilter"] = searchString;
             var pessoafisica = from s in _pessoaFisicaRepository.GetAll()
                                select s;
             if (!String.IsNullOrEmpty(searchString))
@@ -37,7 +39,22 @@ namespace Tcc.DayHappy.Web.Controllers
                 pessoafisica = pessoafisica.Where(s => s.NOME_PES_FIS.Contains(searchString)
                                        || s.CPF_PES_FIS.Contains(searchString));
             }
-              if (pessoafisica.Any())
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    pessoafisica = pessoafisica.OrderByDescending(s => s.NOME_PES_FIS);
+                    break;
+                case "Date":
+                    pessoafisica = pessoafisica.OrderBy(s => s.NASC_PES_FIS);
+                    break;
+                case "date_desc":
+                    pessoafisica = pessoafisica.OrderByDescending(s => s.NASC_PES_FIS);
+                    break;
+                default:
+                    pessoafisica = pessoafisica.OrderBy(s => s.NOME_PES_FIS);
+                    break;
+            }
+            if (pessoafisica.Any())
               {
                   var viewmodel = pessoafisica.Select(p => new ClientePFViewModel
                   {
@@ -119,13 +136,13 @@ namespace Tcc.DayHappy.Web.Controllers
         }
 
 
-        public IActionResult DeletarCliente(int id)
+        public IActionResult DeletarCliente(ClientePFViewModel viewModel)
         {
-            var viewModel = new ClientePFViewModel();
+             viewModel = new ClientePFViewModel();
 
-            if (id > 0)
+            if (viewModel.Id > 0)
             {
-                var pessoafisica = _pessoaFisicaRepository.GetById(id);
+                var pessoafisica = _pessoaFisicaRepository.GetById(viewModel.Id);
                 viewModel.Id = pessoafisica.Id;
                 viewModel.Nome = pessoafisica.NOME_PES_FIS;
                 viewModel.DataNasc = pessoafisica.NASC_PES_FIS;
@@ -141,14 +158,12 @@ namespace Tcc.DayHappy.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult DeletarCliente(ClientePFViewModel viewModel)
+        public IActionResult DeletarCliente(int id)
         {
-            _pessoaFisicaArmazenar.Deletar(viewModel.Id, viewModel.Nome, viewModel.DataNasc, viewModel.Sexo,
-               viewModel.Cpf, viewModel.Rg, viewModel.Referencia, viewModel.Contato1, viewModel.Cep, viewModel.Logradouro, viewModel.Numero, viewModel.Bairro, viewModel.Cidade
-               , viewModel.Contato2, viewModel.Email);
+            _pessoaFisicaArmazenar.Deletar(id);
 
 
-            return RedirectToAction("CadastrarCliente");
+            return RedirectToAction("Index");
 
         }
 
